@@ -200,3 +200,23 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .price-row span:first-child { font-weight: 700; }
 .price-row s { color: var(--color-text-muted); font-weight: 400; margin-left: 8px; }
+
+/* === REVIEWS === */
+.reviews .container { max-width: 640px; }
+
+/* === CONTACTS === */
+.contacts__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* === FOOTER === */
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.social-links { display: flex; gap: 16px; margin-top: 12px; }
+.social-links a { text-decoration: underline; }
