@@ -228,7 +228,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   .services__grid { grid-template-columns: repeat(2, 1fr); }
   .gallery__grid { grid-template-columns: repeat(2, 1fr); }
   .site-footer__grid { grid-template-columns: repeat(2, 1fr); }
-  .contacts__grid { flex-wrap: nowrap; }
+  .contacts__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 }
 
 /* === RESPONSIVE: DESKTOP (>=1200px) === */
@@ -237,9 +237,9 @@ ul { margin: 0; padding: 0; list-style: none; }
   .hero { padding: 128px 0 112px; }
   .services__grid { grid-template-columns: repeat(3, 1fr); }
   .price-row {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 140px max-content;
     align-items: center;
-    justify-content: space-between;
+    gap: 24px;
   }
-  .price-row a.btn { margin-left: auto; }
 }
