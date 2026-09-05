@@ -164,3 +164,39 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-weight: 700;
   font-size: 0.9rem;
 }
+
+/* === PRICING PREVIEW === */
+.pricing-preview .container { max-width: 640px; text-align: center; }
+.pricing-preview .btn { margin-top: 20px; }
+
+/* === PRICING PAGE === */
+.price-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 32px;
+}
+.price-tab {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 2px solid var(--color-text);
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+}
+.price-tab.is-active { background: var(--color-text); color: var(--color-on-dark); }
+
+.price-list { display: flex; flex-direction: column; gap: 12px; }
+.price-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+}
+.price-row span:first-child { font-weight: 700; }
+.price-row s { color: var(--color-text-muted); font-weight: 400; margin-left: 8px; }
