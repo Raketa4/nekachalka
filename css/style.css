@@ -125,3 +125,21 @@ ul { margin: 0; padding: 0; list-style: none; }
   gap: 16px;
   margin-top: 28px;
 }
+
+/* === ABOUT === */
+.about .container { max-width: 760px; }
+
+/* === SERVICES === */
+.services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 32px;
+}
+.service-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+}
+.service-card h3 { font-size: 1.3rem; }
