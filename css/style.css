@@ -100,3 +100,28 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .site-header nav ul { display: flex; gap: 24px; }
 .site-header nav a { text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+
+/* === HERO === */
+.hero { padding: 72px 0 64px; }
+.hero h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); max-width: 14ch; }
+.hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 20px 0;
+}
+.hero__tags li {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border: 1px solid rgba(247, 244, 239, 0.35);
+  border-radius: 999px;
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
